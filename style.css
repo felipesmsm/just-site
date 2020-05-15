@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image:url("https://static.tumblr.com/ej6o0pi/VVflzr55h/bg-mickey2-direita-galaxy.gif");
+    font-size: xx-large;
+    background-size: 1350px 700px;
+    height: 100vh;
+  }
+
+  header{
+      height: 100vh;
+      display:flex;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  a{
+    text-decoration: none;
+    font-family: freestyle script;
+    color:black
+  }
+
+  .menu a:active,
+  .menu a:hover {
+  color:black;
+  background-color:purple;
+  text-decoration: underline;
+  border-radius: 20%;
+}
+
+ul{
+  border-bottom: 3px solid purple
+}
+
+  .site-title{
+     color:purple;
+      font-family:Arial;
+       font-style:italic;
+        text-align:center;
+        align-items:center;
+        transform: translateY(10px);
+      }
+
+  
+  .site-subsubtitle,
+  .site-subtitle{
+    color:black;
+     font-style:oblique;
+     align-items: center;
+     line-height: 1.5em;
+     transform: translateY(20px);
+    }
+  
+   
+  .portfolio{
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    font-style: normal;
+    height: 100vh;
+    transform: translateY(200px);
+  }
+
+  .contato{
+    font-family: 'Satisfy', cursive;
+    font-size: 1em;
+    font-style: normal;
+    height: 20vh;
+    position:relative;
+    transform: translateY(400px);
+   }
+
+.contato a{
+  font-size: 2em;
+}
+
+
+.menu{
+position: fixed;
+width: 100vw;
+top: 0px;
+background-color: white;
+z-index: 1;
+  }
+  
+.menu a{
+  padding: 26px 20px;
+  display: block;
+  transition: 0.5s;
+}
+
+  .menu li {
+    list-style:none;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content:space-around;
+  }
+  
+  
+  .Projetos, 
+  .web,
+  .eCommerce,
+  .Mobile{
+width: 180px;
+padding: 30px;
+}
+
+
+.Mobile:hover{
+ transform: scale(1.2);
+ transition: transform 1s;
+}
+
+.eCommerce:hover{
+  transform: scale(1.2);
+ transition: transform 1s;
+}
+
+
+.web:hover{
+  transform: scale(1.2);
+ transition: transform 1s;
+}
+
+.Projetos:hover{
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+
+figcaption{
+  font-family: freestyle script;
+  font-size: 70px;
+  padding: 10px;
+  list-style: none;
+}
+
+section{
+  padding: 20px;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 0.5em;
+}
+
+@media (min-width: 540px){
+.portfolio .grid{
+  grid-template-columns: 290px 290px;
+}
+}
+
+@media (min-width: 1024px){
+  .portfolio .grid{
+    grid-template-columns: 290px 290px 290px;
+  }
+  }
+
+  @media (min-width: 1100px){
+    .portfolio .grid{
+      grid-template-columns: 300px 300px 300px 300px;
+    }
+    }
+
+.portfolio figure{
+text-align: center;
+}
+
+.logo{
+  width: 90px;
+  text-align: left;
+}
+.contato a:active,
+.contato a :hover {
+  text-shadow:0px 0px 20px  purple;
+  transition: text-shadow 1s;
+}
+
+.titulo{
+transform: scale(0.2) translateY(500px);
+opacity:0;
+animation:linear 1s animaçaotitulo forwards;
+}
+
+@keyframes animaçaotitulo{
+
+100%{
+  transform: scale(1) translateY(0px);
+  opacity:1;
+}
+}
+
+.sobre:before {
+  content:"";
+  display:block;
+  height:90px; 
+  margin:-90px 0 0;
+  }
